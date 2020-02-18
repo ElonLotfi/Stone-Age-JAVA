@@ -1,8 +1,8 @@
-#Sujet : le jeu Stone Age (L'Âge de Pierre)
+# Sujet : le jeu Stone Age (L'Âge de Pierre)
 
-#Il s'agit de réaliser une version électronique du jeu "Stone Age".
+# Il s'agit de réaliser une version électronique du jeu "Stone Age".
 
-#Il faut pour cela réaliser les fonctionnalités suivantes :
+# Il faut pour cela réaliser les fonctionnalités suivantes :
 
     représentation de jeu (représentation du plateau, des zones,  des cartes,  comptage des points, validité des coups, etc.). 
     moteur de jeu (mise en place, gestion des pioches, actions, détermination des points, de la fin de la partie...).
