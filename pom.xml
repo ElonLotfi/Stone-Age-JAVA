@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <groupId>SAE</groupId>
+  <artifactId>stoneage</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8 </project.build.sourceEncoding>
+    <compiler.source>1.7 </compiler.source>
+    <compiler.target>1.7</compiler.target>
+  </properties>
+
+  <build>
+    <sourceDirectory>${project.basedir}/stoneage/src/main/java </sourceDirectory>
+    <testSourceDirectory>${project.basedir}/stoneage/src/test/java</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.2</version>
+
+      </plugin>
+
+      <plugin>
+
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.0.1</version>
+        <configuration>
+          <show>package</show>
+          <nohelp>true</nohelp>
+          <encoding>utf-8</encoding>
+          <charset>utf-8</charset>
+          <docencoding>utf-8</docencoding>
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>javadoc</id>
+            <goals>
+              <goal>javadoc</goal>
+            </goals>
+            <phase>site</phase>
+            <configuration>
+              <outputDirectory>src/main/apidocs/</outputDirectory>
+              <reportOutputDirectory>src/main/apidocs/</reportOutputDirectory>
+            </configuration>
+          </execution>
+          <execution>
+            <id>test-javadoc</id>
+            <goals>
+              <goal>test-javadoc</goal>
+            </goals>
+            <phase>site</phase>
+            <configuration>
+              <reportOutputDirectory>${basedir}/test/java/apidocs</reportOutputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+
+        <executions>
+          <execution>
+            <id>stat</id>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>Game.engine.StoneAgeStat</mainClass>
+            </configuration>
+          </execution>
+          <execution>
+            <id>partie</id>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>Game.engine.StoneAge</mainClass>
+            </configuration>
+          </execution>
+        </executions>
+
+      </plugin>
+
+
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.5.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>3.0.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
