@@ -4,7 +4,7 @@
 
 # Exemple d'exécution de jeu
 
-![](Game.gif.gif)
+![](https://github.com/JugheadTn/Stone-Age-JAVA/blob/master/Game.gif)
 
 # Pour lancer la partie avec le déroulé du jeu :
 mvn exec:java@partie 
