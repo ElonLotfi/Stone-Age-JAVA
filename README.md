@@ -1,25 +1,10 @@
-# Sujet : le jeu Stone Age (L'Âge de Pierre)
+#  le jeu Stone Age (L'Âge de Pierre)
 
 # Il s'agit de réaliser une version électronique du jeu "Stone Age".
 
-# Il faut pour cela réaliser les fonctionnalités suivantes :
+# Exemple d'exécution de jeu
 
-    représentation de jeu (représentation du plateau, des zones,  des cartes,  comptage des points, validité des coups, etc.). 
-    moteur de jeu (mise en place, gestion des pioches, actions, détermination des points, de la fin de la partie...).
-    robots de jeu, en partant d'une version très simple à des stratégies de jeu plus sophistiqués (chaque nouvel élément intégré dans votre moteur de jeu et dans la représentation doit être utilisée par un robot)
-    simulation de parties entre 2 robots et entre 3 ou 4 robots, comptage des points, des victoires et classement entre vos robots.
-    visualisation de l'état du jeu (en fin de partie pour commencer, tout au long de la partie ensuite). Cette visualisation devra être textuelle. Une version graphique N'EST PAS demandée, car impossible dans le temps imparti.
-    Il est demandé deux exécutions (c.f. les outils pour configurer le pom) : 
-        [id dans le pom.xml : partie] : une exécution  d'une partie, avec le déroulé visible et compréhensible
-        [id dans le pom.xml : stat] : une exécution de 500 parties avec vos différents robots/IA, sans autres sorties textuelles que le avec résumé global : nombre de victoire, moyenne des points.
-        le nombre de joueur sera un paramètre de l'exécution maven
-
-(warning) Il ne s'agit pas de réaliser une version interactive de ce jeu (aucun joueur humain).
-
-(warning) La priorité est donnée à une version avec 2 robots intelligents (instanciés plusieurs fois), plutôt qu'à 3 ou 4 robots assez stupides.
-
-
-
+![](Game.gif.gif)
 
 # Pour lancer la partie avec le déroulé du jeu :
 mvn exec:java@partie 
