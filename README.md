@@ -3,10 +3,10 @@
 
 
 
-
 ### Technologie utilisée : 
 	 JAVA
 	 Tests unitaires (utilisation du framework JUnit )
+	 Utilisation de l'outil de construction de projets Maven
 
 
 ------------
