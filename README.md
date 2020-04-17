@@ -1,4 +1,4 @@
-# le jeu Stone Age (Age de Pierre)
+# Le jeu [Stone Age](https://cdn.1j1ju.com/medias/b8/8f/79-lage-de-pierre-regle.pdf "Stone Age") (Age de Pierre)
 
 
 
